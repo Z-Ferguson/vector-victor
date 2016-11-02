@@ -40,13 +40,13 @@ def test_shape_vectors():
 # def test_vector_add_is_commutative():
 #     assert vector_add(w, y) == vector_add(y, w)
 #
-#
+# #
 # @raises(ShapeError)
 # def test_vector_add_checks_shapes():
 #     """Shape rule: the vectors must be the same size."""
 #     vector_add(m, v)
-#
-#
+# #
+# #
 # def test_vector_sub():
 #     """
 #     [a b]  - [c d]  = [a-c b-d]
