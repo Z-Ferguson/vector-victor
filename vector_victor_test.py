@@ -45,23 +45,23 @@ def test_vector_add_is_commutative():
 def test_vector_add_checks_shapes():
     """Shape rule: the vectors must be the same size."""
     vector_add(m, v)
-# #
-# #
-# def test_vector_sub():
-#     """
-#     [a b]  - [c d]  = [a-c b-d]
-#     Matrix + Matrix = Matrix
-#     """
-#     assert vector_sub(v, w) == [1, 1, -4]
-#     assert vector_sub(w, v) == [-1, -1, 4]
-#     assert vector_sub(y, z) == y
-#     assert vector_sub(w, u) == vector_sub(z, vector_sub(u, w))
-#
-#
-# @raises(ShapeError)
-# def test_vector_sub_checks_shapes():
-#     """Shape rule: the vectors must be the same size."""
-#     vector_sub(m, v)
+
+
+def test_vector_sub():
+    """
+    [a b]  - [c d]  = [a-c b-d]
+    Matrix + Matrix = Matrix
+    """
+    assert vector_sub(v, w) == [1, 1, -4]
+    assert vector_sub(w, v) == [-1, -1, 4]
+    assert vector_sub(y, z) == y
+    assert vector_sub(w, u) == vector_sub(z, vector_sub(u, w))
+
+
+@raises(ShapeError)
+def test_vector_sub_checks_shapes():
+    """Shape rule: the vectors must be the same size."""
+    vector_sub(m, v)
 #
 #
 # def test_vector_sum():
