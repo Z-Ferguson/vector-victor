@@ -2,10 +2,12 @@
 
 ## Files
 
-1. textminer
+1. vector-victor
+
 ⋅⋅1. vector_victor.py
 
 2. tests
+
 ..1. vector_victor_test.py
 
 
